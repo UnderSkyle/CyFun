@@ -3,9 +3,9 @@
 	"id": "cyfun",
 	"version": "${version}",
 	"name": "CyFun",
-	"description": "Fun summer project to learn minecraft modding",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"UnderSkyle"
+		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"net.underskyle.cyfun.CyFun"
+		],
+		"client": [
+			"net.underskyle.cyfun.CyFunClient"
 		],
 		"fabric-datagen": [
 			"net.underskyle.cyfun.CyFunDataGenerator"
