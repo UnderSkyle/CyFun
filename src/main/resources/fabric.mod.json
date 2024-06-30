@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "cyfun",
+	"version": "${version}",
+	"name": "CyFun",
+	"description": "Fun summer project to learn minecraft modding",
+	"authors": [
+		"UnderSkyle"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cyfun/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.underskyle.cyfun.CyFun"
+		],
+		"fabric-datagen": [
+			"net.underskyle.cyfun.CyFunDataGenerator"
+		]
+	},
+	"mixins": [
+		"cyfun.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
