@@ -10,7 +10,9 @@ import net.minecraft.util.Identifier;
 import net.underskyle.cyfun.block.ModBlocks;
 import net.underskyle.cyfun.item.ModItemGroups;
 import net.underskyle.cyfun.item.ModItems;
+import net.underskyle.cyfun.util.ModCustomTrades;
 import net.underskyle.cyfun.util.ModLootTableModifiers;
+import net.underskyle.cyfun.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,7 +27,9 @@ public class CyFun implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
+		ModVillagers.registerVillagers();
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
 	}
 
 }

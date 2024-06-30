@@ -11,11 +11,11 @@ import net.minecraft.util.Identifier;
 import net.underskyle.cyfun.CyFun;
 
 public class ModItemGroups {
-    public static final ItemGroup MOD_GROUP = Registry.register(Registries.ITEM_GROUP,
+    /*public static final ItemGroup MOD_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CyFun.MOD_ID, "cyfun"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.cyfun"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
-                        /*entries.add(ModItems.RUBY);
+                        entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
 
                         entries.add(ModItems.METAL_DETECTOR);
@@ -83,12 +83,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_CHESTNUT_WOOD);
                         entries.add(ModBlocks.CHESTNUT_PLANKS);
                         entries.add(ModBlocks.CHESTNUT_LEAVES);
-                        entries.add(ModBlocks.CHESTNUT_SAPLING);*/
+                        entries.add(ModBlocks.CHESTNUT_SAPLING);
 
 
                     }).build());
 
 
+    */
     public static void registerItemGroups() {
         CyFun.LOGGER.info("Registering Item Groups for " + CyFun.MOD_ID);
     }

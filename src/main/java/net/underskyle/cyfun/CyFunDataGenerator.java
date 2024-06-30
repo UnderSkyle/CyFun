@@ -2,11 +2,7 @@ package net.underskyle.cyfun;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.underskyle.cyfun.datagen.ModBlockTagProvider;
-import net.underskyle.cyfun.datagen.ModLootTableProvider;
-import net.underskyle.cyfun.datagen.ModModelProvider;
-import net.underskyle.cyfun.datagen.ModItemTagProvider;
-import net.underskyle.cyfun.datagen.ModRecipeProvider;
+import net.underskyle.cyfun.datagen.*;
 
 public class CyFunDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -18,6 +14,7 @@ public class CyFunDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModPoiTagProvider::new);
 	}
 
 }
